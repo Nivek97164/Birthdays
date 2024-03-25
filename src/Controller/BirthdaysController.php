@@ -20,7 +20,7 @@ class BirthdaysController extends AppController
     
     // Méthode pour traiter la réponse
     private function processResponse($data) {
-        $person = $data['students_birthday'][2];
+        $person = $data['students_birthday'][0];
         $this->set('person', $person);
         // Traitez la réponse comme nécessaire, par exemple, sauvegardez-la en base de données
         // Cette étape peut inclure le formatage des données, la validation, etc.
